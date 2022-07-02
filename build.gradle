@@ -1,5 +1,6 @@
 plugins {
 	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id "com.modrinth.minotaur" version "2.+"
 	id 'maven-publish'
 }
 
@@ -56,6 +57,17 @@ java {
 jar {
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
+	}
+}
+
+modrinth {
+	projectId = "vanillamancy"
+	versionType = "alpha"
+	uploadFile = jar
+	gameVersions = ["1.19"]
+	loaders = ["fabric"]
+	dependencies {
+		required.project "fabric-api"
 	}
 }
 

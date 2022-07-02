@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "vanillamancy",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Vanillamancy",
+  "description": "Uses vanilla items in unique, new, magical ways!",
   "authors": [
-    "Me!"
+    "TheMysticalBard"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://modrinth.com/mod/vanillamancy",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "APACHE",
+  "icon": "assets/vanillamancy/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.themysticalbard.vanillamancy.VanillamancyMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "vanillamancy.mixins.json"
   ],
 
   "depends": {
